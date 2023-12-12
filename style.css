@@ -294,6 +294,30 @@ h3 {
   font-weight: 600;
   margin: 10px 0;
 }
+
+.scroll{
+  overflow: hidden;
+}
+
+.scroll span{
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 100%;
+  height: 100%;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translate(80%,0);
+  }
+  100%{
+    transform: translate(-80%,0);
+  }
+}
+
+
 .course-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
